@@ -1,0 +1,11 @@
+server:
+  port: 8989
+spring:
+  application:
+    name: zuul-proxy-gateway
+
+zuul:
+  routes:
+    product-enquiry: /apis/v1/product-inquiry/**
+    url: http://localhost:8700
+
